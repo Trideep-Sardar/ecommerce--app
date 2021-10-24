@@ -12,8 +12,8 @@ class _CatalogHeaderState extends State<CatalogHeader> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Catalog App".text.xl5.color(context.theme.buttonColor).make(),
-        "Trending products".text.xl2.color(context.theme.splashColor).make(),
+        "Ecommerce App".text.xl5.color(context.theme.buttonColor).make(),
+        "Trending Products".text.xl3.color(context.theme.splashColor).make(),
       ],
     );
   }
