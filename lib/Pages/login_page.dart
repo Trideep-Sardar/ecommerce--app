@@ -42,26 +42,26 @@ class _LoginPageState extends State<LoginPage> {
                     fit: BoxFit.cover,
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 22,
                   ),
                   Text(
                     "Welcome $name",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
-                        fontSize: 28),
+                        fontSize: 26),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        vertical: 20, horizontal: 30),
+                        vertical: 22, horizontal: 32),
                     child: Column(
                       children: [
                         TextFormField(
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return "username connot be empty";
+                              return "username can't be empty";
                             } else if (value != originalUser) {
-                              return "username incorrect";
+                              return "username is incorrect";
                             }
                             return null;
                           },
@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                         TextFormField(
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return "username connot be empty";
+                              return "username can't be empty";
                             } else if (value.length < 6) {
                               return "password length should be atleast 6";
                             } else if (value != originalPassword) {
@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                               labelText: "Password"),
                         ),
                         SizedBox(
-                          height: 40,
+                          height: 38,
                         ),
                         Material(
                           borderRadius:
