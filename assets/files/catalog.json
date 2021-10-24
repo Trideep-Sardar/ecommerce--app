@@ -2,7 +2,7 @@
     "products": [
       {
         "id": 1,
-        "name": "iPhone 12 Pro",
+        "name": "iPhone 12",
         "desc": "Apple iPhone 12th generation",
         "price": 999,
         "color": "#33505a",
@@ -26,9 +26,9 @@
       },
       {
         "id": 4,
-        "name": "Playstation 5",
+        "name": "Playstation 5 Pro",
         "desc": "Sony Playstation 5th generation",
-        "price": 500,
+        "price": 1200,
         "color": "#544ee4",
         "image": "https://i1.wp.com/freepngimages.com/wp-content/uploads/2020/07/Playstation-5-games-console-transparent-background-png-image.png?fit=1000%2C1000"
       },
@@ -36,7 +36,7 @@
         "id": 5,
         "name": "Airpods Pro",
         "desc": "Apple Aipods Pro 1st generation",
-        "price": 200,
+        "price": 400,
         "color": "#e3e4e9",
         "image": "https://crdms.images.consumerreports.org/c_lfill,w_598/prod/products/cr/models/400116-wireless-portable-headphones-apple-airpods-pro-10009323.png"
       },
