@@ -10,9 +10,9 @@ import 'package:flutter_application_2/widgets/home_widgets/catalog_list.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatefulWidget {
-  bool light;
+  bool islight;
 
-  HomePage({Key? key, required this.light}) : super(key: key);
+  HomePage({Key? key, required this.islight}) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 3));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
@@ -51,10 +51,10 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: MyDrawer(),
       appBar: AppBar(
-        title: "My Flutter App".text.color(context.accentColor).make(),
+        title: "Ecommerce App".text.color(context.accentColor).make(),
         actions: [
           Switch.adaptive(
-            value: widget.light,
+            value: widget.dark,
             onChanged: (state) {
               setState(() {
                 widget.light = state;
